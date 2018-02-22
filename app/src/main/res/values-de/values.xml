@@ -2,15 +2,19 @@
 <resources>
 
     <integer-array name="notification_vibration_option_values">
+        <item>-1</item>
+        <item>200</item>
+        <item>2000</item>
+        <item>0</item>
     </integer-array>
 
     <string-array name="pref_entry_values_font">
-        <item>Standard</item>
-        <item>sserif</item>
+        <item>default</item>
+        <item>serif</item>
         <item>monospace</item>
     </string-array>
     <string-array name="pref_entry_values_appbar_compact_mode">
-        <item>nie</item>
+        <item>never</item>
         <item>immer</item>
         <item>automatisch</item>
     </string-array>
