@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Revolution IRC</string>
+    <string name="app_name">Revolution IRC DEV</string>
 
     <!-- Chat -->
 
@@ -17,12 +17,12 @@
     <string name="message_topic">Thema: %s</string>
     <string name="message_topic_by">Thema: %s, gesetzt unter %s</string>
 
-    <string name="message_host_info">Servername ist %s, läuft %s. Unterstützte Benutzermodi: %s, unterstützte Kanalmodi: %s</string>
+    <string name="message_host_info">Servername ist %s, läuft %s. Unterstützte Benutzermodi: %s, Unterstützte Kanalmodi: %s</string>
     <string name="message_motd">Nachricht des Tages</string>
 
     <string name="message_mode">%s %s</string>
     <string name="message_mode_set">setzen %s</string>
-    <string name="message_mode_unset">niicht gesetzt %s</string>
+    <string name="message_mode_unset">nicht gesetzt %s</string>
     <string name="message_mode_gave">gab %s</string>
     <string name="message_mode_removed">entfernt %s</string>
 
@@ -62,7 +62,7 @@
     <string name="action_reconnect">Erneut Verbinden</string>
     <string name="action_open">Öffnen</string>
     <string name="action_back">Zurück</string>
-    <string name="action_close">Schliessen</string>
+    <string name="action_close">Schließen</string>
     <string name="action_disconnect_and_close">Trennen und Beenden</string>
     <string name="action_servers">Verwalte Server</string>
     <string name="action_add_below">Füge unten hinzu</string>
@@ -74,12 +74,12 @@
     <string name="action_continue">Fortsetzen</string>
     <string name="action_finish">Fertig</string>
     <string name="action_search">Suchen</string>
-    <string name="action_search_ellipsis">Suche...</string>
+    <string name="action_search_ellipsis">Suche…</string>
     <string name="action_sort">Sortierung</string>
     <string name="action_sort_none">Nicht sortieren</string>
     <string name="action_sort_name">Sortierung nach Name</string>
     <string name="action_join_channel">Kanal beitreten</string>
-    <string name="action_message_user">Nachrichtennutzer</string>
+    <string name="action_message_user">Direkt Konversation</string>
     <string name="action_part_channel">Verlasse Kanal</string>
     <string name="action_close_direct">Schliesse Konversation</string>
     <string name="action_clear_all">Alles Löschen</string>
@@ -129,12 +129,8 @@
     <string name="connection_error_command_title">Fehler bei der Verarbeitung von Post-Verbindungs-Befehlen</string>
     <string name="connection_error_command_notification_desc">Beim Versuch, Post-Verbindungs-Befehle zu verarbeiten, ist ein interner Fehler aufgetreten.</string>
     <plurals name="connection_error_command_dialog_content">
-        <item quantity="one">Beim Verarbeiten des folgenden Befehls für das Netzwerk \"%s\" ist ein Fehler aufgetreten: \n
-   \n
-   % s</item>
-        <item quantity="other">Bei der Verarbeitung der folgenden Befehle für das Netzwerk \"%s\" ist ein Fehler aufgetreten: \n
-   \n
-   % s</item>
+        <item quantity="one">Beim Verarbeiten des folgenden Befehls für das Netzwerk \"%s\" ist ein Fehler aufgetreten:\n\n%s</item>
+        <item quantity="other">Bei der Verarbeitung der folgenden Befehle für das Netzwerk \"%s\" ist ein Fehler aufgetreten:\n\n%s</item>
     </plurals>
 
     <!-- Server list -->
@@ -176,8 +172,8 @@
 
     <string-array name="server_auth_modes">
         <item>Kein</item>
-        <item>Server Kennwort</item>
-        <item>Nutzername mit Kennwort (SASL)</item>
+        <item>Server Passwort</item>
+        <item>Nutzername mit Passwort (SASL)</item>
     </string-array>
 
     <!-- Certificate manager -->
@@ -188,10 +184,10 @@
 
     <!-- Certificate error dialog -->
 
-    <string name="certificate_error">Das Zertifikat von %s\'s konnte nicht verifiziert werden</string>
+    <string name="certificate_error">Das Zertifikat von %s konnte nicht verifiziert werden</string>
     <string name="certificate_error_ignore">Akzeptieren und weiter</string>
     <string name="certificate_bad_cert">Das folgende Zertifikat wird vom System nicht erkannt:</string>
-    <string name="certificate_bad_hostname">Der im Zertifikat (%1$s) vom Host angegebene Hostname stimmt nicht mit dem Hostnamen überein, mit dem wir uns verbinden (%2$s).</string>
+    <string name="certificate_bad_hostname">Der im Zertifikat (%s) vom Host angegebene Hostname stimmt nicht mit dem Hostnamen überein, mit dem wir uns verbinden (%s).</string>
     <string name="certificate_error_footer">Sie sollten dieses Zertifikat nicht akzeptieren, wenn Sie nicht sicher sind, was das bedeutet.</string>
     <string name="certificate_error_remember">Ausnahme beachten</string>
 
@@ -257,18 +253,18 @@
     <string name="pref_title_default_nick">Standard Spitznamen</string>
     <string name="pref_title_default_user">Standard Nutzer</string>
     <string name="pref_title_default_realname">Standard Echtname</string>
-    <string name="pref_title_default_quit_message">Trenne (verlassen) Nachricht</string>
-    <string name="pref_title_default_part_message">Kanal hinterlasse Nachricht</string>
+    <string name="pref_title_default_quit_message">Nachricht beim Trennen (Schließen)</string>
+    <string name="pref_title_default_part_message">Nachricht beim Kanal Verlassen</string>
 
-    <string name="pref_value_default_quit_message">Beende</string>
-    <string name="pref_value_default_part_message">Verlasse</string>
+    <string name="pref_value_default_quit_message">Quit</string>
+    <string name="pref_value_default_part_message">Leaving</string>
 
     <!-- Interface settings -->
 
-    <string name="pref_header_interface">Schnittstelle</string>
+    <string name="pref_header_interface">Oberfläche</string>
 
     <string name="pref_title_dark_theme">Dunkles Design</string>
-    <string name="pref_summary_dark_theme">Wende ein dunkles Design auf die Schnittstelle an</string>
+    <string name="pref_summary_dark_theme">Wende ein dunkles Design auf die Oberfläche an</string>
     <string name="pref_title_primary_color">Primärfarbe</string>
     <string name="pref_title_accent_color">Akzentfarbe</string>
     <string name="pref_title_font">Schrift</string>
@@ -302,8 +298,8 @@
     <string name="font_size_sample_text">Dies ist ein Beispieltext, der angibt, wie die Schriftgröße im Chat aussehen wird. Sie können es mit dem Schieberegler ändern.</string>
 
     <string-array name="pref_entries_appbar_compact_mode">
-        <item></item>
-        <item></item>
+        <item>@string/value_never</item>
+        <item>@string/value_always</item>
         <item>Wenn es wenig Platz für Nachrichten gibt</item>
     </string-array>
 
@@ -380,10 +376,12 @@
     <string name="notification_rule_summary_any_server">Beliebiger Server</string>
     <string name="notification_rule_summary_any_channel">Beliebiger Kanal</string>
     <plurals name="notification_rule_summary_multi_channels">
+        <item quantity="one">%d Kanal</item>
         <item quantity="other">%d Kanäle</item>
     </plurals>
     <string name="notification_rule_summary_any_nick">Beliebiger Spitzname</string>
     <plurals name="notification_rule_summary_multi_nicks">
+        <item quantity="one">%d Spitzname</item>
         <item quantity="other">%d Spitznamen</item>
     </plurals>
 
@@ -408,14 +406,14 @@
 
     <!-- Reconnect settings -->
 
-    <string name="pref_header_reconnect">Wiederverbindung</string>
-    <string name="pref_title_auto_reconnect">Automatisch Wiederverbinden</string>
-    <string name="pref_description_auto_reconnect">Versuche Automatische Wiederverbindung nach einem Verbindungsverlust</string>
+    <string name="pref_header_reconnect">Reconnect</string>
+    <string name="pref_title_auto_reconnect">Automatischer Reconnect</string>
+    <string name="pref_description_auto_reconnect">Versuche Automatischen Reconnect nach einem Verbindungsverlust</string>
     <string name="pref_title_reconnect_connchg">Verfolgen Verbindungsänderungen</string>
-    <string name="pref_description_reconnect_connchg">Versuche Automatische Wiederverbindung nach einem Verbindungswechsel</string>
+    <string name="pref_description_reconnect_connchg">Versuche Automatischen Reconnect nach einem Verbindungswechsel</string>
     <string name="pref_title_reconnect_wifi">Nur bei WiFi wiederverbinden</string>
     <string name="pref_description_reconnect_wifi">Versuchen Sie nur, die Verbindung wiederherzustellen, während Sie eine WiFi-Verbindung verwenden</string>
-    <string name="pref_title_reconnect_pattern">Verbindungswiederholungs-Intervall</string>
+    <string name="pref_title_reconnect_pattern">Reconnect-Intervall</string>
     <string name="reconnect_header_interval">Interval</string>
     <string name="reconnect_header_tries">Versuche</string>
 
@@ -485,13 +483,13 @@
 
     <string name="title_activity_backup">Sicherung</string>
     <string name="title_activity_restore">Wiederherstellen</string>
-    <string name="title_activity_backup_password">Setze ein Kennwort</string>
-    <string name="title_activity_backup_password_restore">Gebe Kennwort ein</string>
+    <string name="title_activity_backup_password">Setze ein Passwort</string>
+    <string name="title_activity_backup_password_restore">Gebe Passort ein</string>
     <string name="title_activity_backup_progress">Erstelle eine Sicherung</string>
     <string name="title_activity_backup_progress_restore">Wiederherstellen einer Sicherung</string>
 
     <string name="backup_desc">Um die Anwendungseinstellungen später wiederherstellen zu können, z. B. nach einer Systeminstallation, möchten Sie möglicherweise eine Konfigurationssicherung erstellen und diese an einem sicheren Ort speichern.</string>
-    <string name="backup_password_text">Die Sicherung enthält alle Ihre Einstellungen, einschließlich Serverinformationen und unverschlüsselte Kennwörter. Es wird empfohlen, ein Kennwort festzulegen, das zum Wiederherstellen der Daten aus der Sicherung erforderlich ist.</string>
+    <string name="backup_password_text">Die Sicherung enthält alle Ihre Einstellungen, einschließlich Serverinformationen und unverschlüsselte Kennwörter. Es wird empfohlen, ein Passwort festzulegen, das zum Wiederherstellen der Daten aus der Sicherung erforderlich ist.</string>
     <string name="backup_restore_password_text">Das angegebene Backup ist mit einem Passwort geschützt. Um es wiederherstellen zu können, müssen Sie das Passwort eingeben.</string>
 
     <string name="backup_created">Die Sicherungsdatei wurde erfolgreich erstellt.</string>
@@ -503,7 +501,7 @@
 
     <!-- Setup -->
 
-    <string name="please_wait_generic">Bitte Warten...</string>
+    <string name="please_wait_generic">Bitte Warten…</string>
 
     <!-- Ignore list -->
 
@@ -534,7 +532,7 @@
 
     <string-array name="color_picker_color_names">
         <item>Schwarz</item>
-        <item>Weiss</item>
+        <item>Weiß</item>
         <item>Blau</item>
         <item>Grün</item>
         <item>Hell Rot</item>

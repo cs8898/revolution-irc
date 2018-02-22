@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Revolution IRC</string>
+    <string name="app_name">Revolution IRC DEV</string>
 
     <!-- Chat -->
 
@@ -376,10 +376,12 @@
     <string name="notification_rule_summary_any_server">Any server</string>
     <string name="notification_rule_summary_any_channel">any channel</string>
     <plurals name="notification_rule_summary_multi_channels">
+        <item quantity="one">%d channel</item>
         <item quantity="other">%d channels</item>
     </plurals>
     <string name="notification_rule_summary_any_nick">any nick</string>
     <plurals name="notification_rule_summary_multi_nicks">
+        <item quantity="one">%d nick</item>
         <item quantity="other">%d nicks</item>
     </plurals>
 

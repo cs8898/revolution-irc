@@ -51,7 +51,7 @@ public class CommandAliasManager {
         CommandAlias joinAlias = CommandAlias.raw("join", "<channels> [keys]", "JOIN ${channels} ${keys}");
         joinAlias.disableArgAutocomplete = true;
         sDefaultAliases.add(joinAlias);
-        sDefaultAliases.add(CommandAlias.raw("part", "[channel] [message...]", "PART ${channel} :${message}"));
+        sDefaultAliases.add(CommandAlias.raw("part", "[channel]", "PART ${channel}"));
         sDefaultAliases.add(CommandAlias.raw("nick", "<new-nick>", "NICK ${new-nick}"));
         sDefaultAliases.add(CommandAlias.message("msg", "<target> <message...>", "${target}", "${message}"));
         sDefaultAliases.add(CommandAlias.message("me", "<message...>", "${channel}", "${ctcp_delim}ACTION ${message}${ctcp_delim}"));
